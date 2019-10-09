@@ -8,4 +8,8 @@ export interface Translations {
   users: string;
   home: string;
   language: string;
+  notebooks: string;
+  notebook: string;
+  notes: string;
+  note: string;
 }

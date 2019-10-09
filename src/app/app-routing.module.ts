@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import {AppController} from './app.controller';
+import { AppController } from './app.controller';
 import { HomeComponent } from './core/components/home/home.component';
 import { routerConfig } from './core/config/router-config.const';
 
@@ -14,8 +14,11 @@ const routes: Routes = [
     }
   },
   {
-    path: routerConfig.users.base,
-    loadChildren: () => import('./lazy/users/users.module').then(mod => mod.UsersModule)
+    path: routerConfig.notebooks.base,
+    loadChildren: () => import('./lazy/notebooks/notebooks.module').then(mod => mod.NotebooksModule),
+    data: {
+      title: AppController.trans().notebooks
+    }
   }
 ];
 
@@ -23,4 +26,5 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}

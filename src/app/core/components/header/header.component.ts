@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 import { AppController } from '../../../app.controller';
 
@@ -7,9 +7,5 @@ import { AppController } from '../../../app.controller';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent extends AppController implements OnInit {
-
-  ngOnInit() {
-  }
-
+export class HeaderComponent extends AppController {
 }

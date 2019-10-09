@@ -1,0 +1,12 @@
+<h2>
+  {{trans.notebooks}}
+</h2>
+<ul>
+  <li *ngFor="let notebook of notebooks">
+    <a [routerLink]="['.', notebook.id]"
+       [title]="notebook.title">
+      {{notebook.title}}
+    </a>
+  </li>
+</ul>
+<router-outlet></router-outlet>

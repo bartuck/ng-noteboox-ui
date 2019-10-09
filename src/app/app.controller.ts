@@ -1,4 +1,5 @@
-import { en_GB } from '../translations/en_GB.const';
+import { pl_PL } from '../translations/pl_PL.const';
+
 import { appConfig } from './core/config/app-config.const';
 import { routerConfig } from './core/config/router-config.const';
 import { AppConfig } from './core/interfaces/app-config.interface';
@@ -20,12 +21,12 @@ export abstract class AppController {
   /**
    * Current translations
    */
-  public trans: Translations = en_GB;
+  public trans: Translations = pl_PL;
 
   /**
    * Current translations available anywhere
    */
   static trans(): Translations {
-    return en_GB;
+    return pl_PL;
   }
 }

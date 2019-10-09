@@ -8,6 +8,6 @@ import { AppConfig } from '../interfaces/app-config.interface';
 export const appConfig: AppConfig = {
   appTitle: 'Noteboox',
   browserTabTitleDelimiter: ' | ',
-  defaultLanguage: 'en_GB',
-  availableLanguages: ['en_GB', 'pl_PL']
+  defaultLanguage: 'pl_PL',
+  availableLanguages: ['pl_PL']
 };
